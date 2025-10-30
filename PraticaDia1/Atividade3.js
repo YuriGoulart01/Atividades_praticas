@@ -15,5 +15,11 @@ desconto = questionFloat("Digite o valor dos descontos: ");
 
 salarioLiquido = salarioBruto + adicionalNoturno + (horasExtras * valorHoraExtra) - desconto
 
-console.log(`seu salario liquido é ${salarioLiquido.toFixed(2)}`)
+console.log(
+  "O seu salário líquido é de:",
+  new Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
+  }).format(salarioLiquido)
+);
 
