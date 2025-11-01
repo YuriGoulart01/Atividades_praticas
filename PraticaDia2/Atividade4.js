@@ -5,9 +5,9 @@ let palavra1,palavra2,palavra3;
 palavra1 = question("Digite a primeira opcao: Vertebrado ou Invertebrado ? ");
 
 if (palavra1.toLocaleLowerCase() === "vertebrado"){
-    palavra2 = question("Digite a segunda opção: Ave ou Mamifero ? ");
+    palavra2 = question("Digite a segunda opcao: Ave ou Mamifero ? ");
         if (palavra2.toLocaleLowerCase() === "ave"){
-            palavra3 = question("Digite a terceira opção: Carnivoro ou Onivoro ? ")
+            palavra3 = question("Digite a terceira opcao: Carnivoro ou Onivoro ? ")
             if (palavra3.toLocaleLowerCase() === "carnivoro") {
                 console.log("O seu animal é uma Águia.")
             }else{
@@ -32,7 +32,7 @@ if (palavra1.toLocaleLowerCase() === "vertebrado"){
                 }
             } else {
                 palavra3 = question("Digite a terceira opcao: Hematofago ou Onivoro ? ")
-                if (palavra3.toLocaleLowerCase === "hematofago"){
+                if (palavra3.toLocaleLowerCase() === "hematofago"){
                     console.log("Seu animal é um Sanguessuga.")
                 }else{
                     console.log("Seu animal é uma Minhoca.")
